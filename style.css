@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Source Sans pro';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.section {
+    padding: 50px 110px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+/* Navbar CSS */
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    position: fixed;
+    top: 0px;
+    gap: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.345);
+    z-index: 99;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.navbar .navlinks {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navlinks ul {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar .searchbar {
+    height: 40px;
+    width: 100%;
+    padding: 0px 24px 0px 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 24px;
+    border: 1px solid #000000;
+    flex-direction: row;
+    background-color: rgba(128, 128, 128, 0.053);
+}
+
+.navbar .searchbar input {
+    padding: 0px 0px 0px 4px;
+    box-sizing: border-box;
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navlinks .btn {
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    height: 2.5rem;
+    width: 6rem;
+    padding: 0px 12px;
+    border: 1px solid #000000
+}
+
+.navbar .navlinks .btn1 {
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    height: 2.5rem;
+    width: 6rem;
+    padding: 0px 12px;
+    border: 1px solid #000000
+}
+
+.navbar .navlinks .btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    height: 2.5rem;
+    width: 3rem;
+    padding: 0px 12px;
+    border: 1px solid #000000
+}
+
+/* Hero Section */
+
+.hero {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("https://img-c.udemycdn.com/notices/home_carousel_slide/image/8e6773bd-6501-4071-a61f-cf26840e0d31.jpg");
+    background-repeat: no-repeat;
+    background-size: 1340px 400px;
+    background-position: center;
+    padding: 0px 140px;
+
+}
+
+.hero .herocard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.345);
+    height: 20vh;
+    width: 400px;
+    padding: 10px 30px;
+}
+
+.hero .herocard .title {
+    font-size: 32px;
+}
+
+/* Course Heding */
+.courseHeading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 0px;
+}
+
+.courseHeading .headingBox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.courseHeading .headingBox .subheading {
+    font-size: 24px;
+}
+
+.courseHeading .courseBar ul {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    transition: all 200ms ease-in-out;
+    color: grey;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.courseHeading .courseBar {
+    transition: all 200ms ease-in-out;
+}
+
+.courseHeading .courseLink:hover {
+    color: black;
+}
+
+/* Course Box */
+.courseBox {
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+
+}
+
+.courseBox .head {
+    padding: 20px 10px 20px 10px;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.318);
+}
+
+
+.courseBox .head .top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.courseBox .head .top .btn {
+    background-color: white;
+    color: black;
+    max-width: fit-content;
+    padding: 8px 10px;
+    border: 1px solid black;
+    font-weight: 600;
+    transition: all 200ms ease-in-out;
+}
+
+.courseBox .head .top .btn:hover {
+    background-color: rgba(0, 0, 0, 0.044);
+}
+
+.courseBox .head .courses {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.courseBox .head .courses .courseCard {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.courseBox .head .courses .courseCard img {
+    border: 1px solid rgba(0, 0, 0, 0.432);
+}
+
+.courseBox .head .courses .courseCard .courseDetail {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.courseBox .head .courses .courseCard .courseDetail .icons {
+    display: flex;
+    gap: 10px;
+}
+
+.courseBox .head .courses .courseCard .courseDetail .price {
+    display: flex;
+    gap: 10px;
+}
+
+/* Goal Section CSS */
+
+.goal {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.044);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.goal .goalCards {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.goal .goalCards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    background-color: white;
+    color: black;
+    padding: 16px;
+
+}
+
+.goal .goalCards .card .review {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.goal .goalCards .card .user {
+    display: flex;
+    gap: 8px;
+}
+
+.goal .goalCards .card .user .profile-pic {
+    clip-path: circle(50%);
+    background-color: black;
+    color: white;
+    padding: 4px;
+    font-weight: 600;
+}
+
+.goal .goalCards .card .user .name {
+    font-weight: 600;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.136);
+    margin: 20px 0;
+}
+
+.goal .goalCards .card .courseName {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.goal .goalCards .card .courseName .fa-solid {
+    font-size: 24px;
+}
+
+/* Student Viewing CSS */
+
+/* I copied the whole Course Box HTML and only removed border */
+.courseBox .head.headx {
+    border: none;
+}
+
+
+/* Top Categories CSS */
+
+.topCategories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.topCategories .categoryCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.topCategories .categoryCards .card {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.topCategories .categoryCards .card .categoryName {
+    padding: 0px 0px 10px 0px;
+}
+
+.topCategories .categoryCards .card img {
+    transition: all 200ms ease-in-out;
+}
+
+.topCategories .categoryCards .card img:hover {
+    transform: scale(1.06);
+}
+
+/* Featured Category CSS */
+
+.featuredCategory {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: rgba(128, 128, 128, 0.078);
+
+}
+
+
+.featuredCategory .categories {
+    width: 100%;
+    display: flex;
+}
+
+.featuredCategory .categories .categoryName {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.featuredCategory .categories .categoryName .title {
+    font-size: 20px;
+    padding: 0px 0px 16px 0px;
+}
+
+.featuredCategory .categories .categoryName .course {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0px 0px 16px 0px;
+}
+
+.featuredCategory .categories .categoryName .course a {
+    text-decoration: underline;
+    color: rgb(95, 3, 223);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.featuredCategory .btn .btnExplore {
+    background-color: white;
+    color: black;
+    max-width: fit-content;
+    padding: 8px 10px;
+    border: 1px solid black;
+    font-weight: 600;
+    transition: all 200ms ease-in-out;
+}
+
+.featuredCategory .btn .btnExplore:hover {
+    background-color: rgba(0, 0, 0, 0.044);
+}
+
+/* Top Companies CSS */
+
+.topCompanies {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.topCompanies .heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.topCompanies .companyLogos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Customer Story CSS */
+
+.customerStories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.044);
+}
+
+.customerStories .card {
+    background-color: white;
+    width: 800px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    display: flex;
+    padding: 16px;
+    gap: 20px;
+}
+
+.customerStories .card .left {
+    text-align: justify;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.customerStories .card .left .read-full-story {
+    text-decoration: underline;
+    color: rgb(77, 2, 198);
+    font-weight: 600;
+    padding-top: 64px;
+}
+
+.customerStories .card .right {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.customerStories .card .right .profilePic img {
+    border-radius: 50%;
+    height: 124px;
+    width: 124px;
+}
+
+.customerStories .viewMore {
+    color: rgb(77, 2, 198);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* Udemy Business CSS */
+
+.udemyBusiness {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.udemyBusiness .card {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.udemyBusiness .card .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.udemyBusiness .card .left .logo img {
+    width: 200px;
+}
+
+.udemyBusiness .card .left .points {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.udemyBusiness .card .left .btns {
+    display: flex;
+    gap: 8px;
+
+}
+
+.udemyBusiness .card .left .btns .get {
+    background-color: black;
+    color: white;
+    max-width: fit-content;
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 200ms ease-in-out;
+}
+
+.udemyBusiness .card .left .btns .learn {
+    background-color: white;
+    color: black;
+    max-width: fit-content;
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 200ms ease-in-out;
+}
+
+.udemyBusiness .card .right img {
+    height: 400px;
+    width: 400px;
+}
+
+.udemyBusiness .card .leftx .start {
+    background-color: black;
+    color: white;
+    max-width: fit-content;
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 200ms ease-in-out;
+}
+
+.udemyBusiness .card .left .parra {
+    text-align: justify;
+
+}
+
+.udemyBusiness .card .leftx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px
+}
+
+/* /Footer CSS */
+
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .top .left {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .top .left .link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.footer .top .left .link .links {
+    transition: all 200ms ease-in-out;
+}
+
+.footer .top .left .links:hover {
+    text-decoration: underline;
+}
+
+.footer .top .right {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.footer .bottom {
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
